@@ -1,0 +1,36 @@
+<br><br>
+<!--<div ng-controller="myCtrl"> </div>-->
+    <img id="mySpinner" src="../images/spinner.gif" ng-show="$ctrl.loading1">
+    <h1></h1>
+<a ng-repeat="img in $ctrl.folders.library"><!--href='#/picture/{{img.id}}'-->
+    <div class = "col-lg-3 col-md-4 col-sm-6 col-xs-12" data-toggle="modal" data-target = "#modal-{{img.id}}">
+        <img ng-src="{{img.url}}"  width=270 height=220 class = "img-rounded img">
+    </div>
+</a>
+<div ng-repeat="img in $ctrl.folders.library" class = "modal" id = "modal-{{img.id}}">
+    <div class = "modal-dialog">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <div class = "col-lg-10"></div>
+                <button class =  "btn exit col-lg-2" data-dismiss = "modal"><span class = "glyphicon glyphicon-remove-sign"></span></button>
+            </div>
+            <div class = "modal-body">
+
+                <div >
+                    <button class = "btn col-lg-2" ng-click = "$ctrl.setImg(img.id, 1)"><span class = "glyphicon glyphicon-chevron-left" data-dismiss = "modal"></span></button>
+                    <p class = "col-lg-8">{{img.name}}</p>
+                    <button class = "btn col-lg-2" ng-click = "$ctrl.setImg(img.id, 2)"><span class = "glyphicon glyphicon-chevron-right" data-dismiss = "modal"></span></button>
+                </div>
+
+                <img ng-src="{{img.url}}"  width=400 height=350 class = "img-rounded img-modal"><br /><br>
+                <button class =  "btn btn-default like" id = "like" ng-click = "$ctrl.like(img.id)"><span class="glyphicon glyphicon-heart"></span>
+                    <div id="likes-{{img.id}}">{{$ctrl.getLike(img.id)}}</div>
+                </button>
+            </div>
+            <div class = "modal-footer">
+                <p>{{img.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+

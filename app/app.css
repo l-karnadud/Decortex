@@ -1,0 +1,140 @@
+body{
+  background-image: url(images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.menu {
+  list-style: none;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+.menu > li {
+  display: inline;
+}
+.btn-group{
+  margin: auto;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.btn{
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-color: rgba(109,104,104,1);
+  border: 1px solid rgba(109,104,104,1);
+  border-radius: 25px;
+}
+.item{
+  display: inline-block;
+  margin:auto;
+  padding-bottom: 10px;
+}
+#search{
+  font-size: 20px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+
+}
+#text-search{
+  font-color: #000080;
+  text-shadow: 1px 1px 2px thistle;
+  font-size: 25px;
+}
+input{
+  border-radius: 10px;
+  border: 1px solid rgba(109,104,104,1);
+  opacity: 0.8;
+}
+#like{
+  width : 450px;
+}
+#img-details{
+  float:left; /* Выравнивание по левому краю */
+  margin: 0 10px 10px 0;
+}
+p{
+  font-color: #000080;
+  text-shadow: 1px 1px 2px thistle;
+  font-size: 25px;
+}
+#content {
+  width: 900px;
+  margin: auto;
+  font: italic normal bold 20px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#data-details{
+  width: 600px;
+  float:right; /* Выравнивание по левому краю */
+  margin: 0 10px 10px 0;
+  text-align: center;
+  font-color:black;
+  border-radius: 10px;
+  border: 2px solid thistle;
+  background: white;
+  opacity: 0.6;
+
+}
+#folder-name{
+  text-align: center;
+  link:#0f0f0f;
+  active:#0f0f0f;
+  color:#0f0f0f;
+  text-shadow: 1px 1px 2px thistle;
+  font-size: 25px;
+
+}
+.folder-container{
+  border-radius: 70px;
+  border: 1px solid thistle;
+}
+.folder-container:hover{
+  border: 1px solid #F4D8F6;
+}
+.folder{
+  margin: auto;
+  text-align: center;
+  border-radius: 70px;
+}
+.img{
+  display: inline-block;
+  margin-bottom: 15px;
+  text-align: center;
+  opacity: 0.7;
+}
+.img:hover{
+  opacity: 1;
+}
+
+.container{
+  margin: auto;
+  text-align: center;
+}
+.modal{
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.modal-header{
+    font-color:black;
+}
+.exit{
+  width: 5px;
+  text-align: right;
+  left:5px;
+  background-color: white;
+}
+.like{
+  width: 400px;
+  border-radius: 30%;
+}
+
+

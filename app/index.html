@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<link>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Decortex</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+  <script src="Bootstrap/js/jquery-3.1.0.min.js"></script>
+  <script src="../node_modules/angular-spinners/dist/angular-spinners.js"></script>
+  <script src="Bootstrap/js/bootstrap.min.js"></script>
+  <script src="Bootstrap/js/respond.min.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src = "controllers.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+  <script src="../node_modules/angular-ui-bootstrap/template/modal/window.html.js"></script>
+  <script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <link rel="stylesheet" href="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+</head>
+<body>
+<div class = "container">
+  <div>
+      <a href="index.html"><img class = "img-responsive center-block" src="images/logo5.png"></a>
+  </div>
+  <br><br>
+  <!--Menu-->
+  <div class = "row">
+    <div class = "col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+    <div class = "btn-group col-lg-8 col-md-8 col-sm-10 col-xs-10">
+      <a href="#/folder" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-camera"></span> Галерея</a>
+      <a href="#/contacts" class="btn btn-lg btn-default">Контакты <span class="glyphicon glyphicon-phone"></span></a>
+    </div>
+    <div class = "col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+  </div>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div ng-view></div>
+</div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src = "picture-detail/picture-detail.module.js"></script>
+  <script src = "picture-detail/picture-detail.component.js"></script>
+  <script src="gallery/gallery.module.js"></script>
+  <script src="gallery/gallery.component.js"></script>
+  <script src = "folders/folders.component.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

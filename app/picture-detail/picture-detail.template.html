@@ -1,0 +1,16 @@
+  <br><br>
+   <div id = "img-details">
+       <img src = {{$ctrl.picture.url}} width=450 height=450>
+       <br><br>
+       <button class =  "btn btn-default" id = "like" ng-click = "$ctrl.like()"><span class="glyphicon glyphicon-heart"></span>
+           <div id="likes">{{$ctrl.getLike()}}</div>
+       </button>
+   </div>
+  <div id = "data-details">
+      <p>{{$ctrl.picture.name}}</p>
+      <hr>
+      <p>{{$ctrl.picture.description}}</p>
+      <br><br>
+  </div>
+
+
